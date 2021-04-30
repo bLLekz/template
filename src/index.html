@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-
     <title>App</title>
   </head>
   <body>
@@ -36,7 +35,16 @@
 
     <!-- content -->
     <main class="main" id="app"> 
+      <video></video>
 
+      <button id="startBtn" class="button is-primary">Start</button>
+      <button id="stopBtn" class="button is-warning">Stop</button>
+  
+      <hr>
+  
+      <button id="videoSelectBtn" class="button is-text">
+        Choose a Video Source
+      </button>
     </main>
     <!-- end content -->
 
@@ -45,5 +53,6 @@
   </body>
   <script>
     require('./js/render.js')
+    require('./js/capture.js')
   </script>
 </html>
